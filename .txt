@@ -1,0 +1,132 @@
+* { margin: 0; padding: 0; }
+.slider input {
+  display: none;
+}
+
+
+  .slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .slider li {
+    list-style: none;
+    position: absolute;
+  }
+
+  .slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+
+  }
+.bold{
+    font-weight: bold;
+}
+.slider label {
+  background-color: #000;
+  bottom: 10px;
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+  left: 10px;
+}
+
+.slider li:nth-child(2) label {
+  left: 40px;
+}
+
+.slider li:nth-child(3) label {
+  left: 70px;
+}
+.slider img {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+ /*header*/
+ .header{
+    text-align: center;
+ }
+ .main-title{
+    font-size: 40px;
+ }
+ .main-paragraph{
+    fonte-style: italic;
+ }
+ /* Imagem destaque*/
+
+ .featured-image{
+    text-align: center;
+    margin-top: 30px;
+ }
+
+ <ul class="slider">
+                <li>
+                      <input type="radio" id="slide1" name="slide" checked>
+                      <label for="slide1"></label>
+                      <img src="img/1.jpg" />
+                </li>
+                <li>
+                      <input type="radio" id="slide2" name="slide">
+                      <label for="slide2"></label>
+                      <img src="img/2.jpeg" />
+                </li>
+                <li>
+                      <input type="radio" id="slide3" name="slide">
+                      <label for="slide3"></label>
+                      <img src="img/3.jpg" />
+                </li>
+            </ul>
+
+            .biography-container{
+    padding: 100px 0;
+    margin: 25px o;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+ }
+ /* quotes */
+ .quotes-container{
+   background-color: #ddd;
+   padding: 30px;
+ }
+ .quotes-container blockquote{
+   font-weight: bold;
+   font-size: 30px;
+ }
+ .quotes-container p{
+   font-style: italic;
+ }
+ /* coriosidades */
+ .curiosities-container{
+   padding: 25px 0;
+   margin: 25px 0;
+   border-top: 1px dashed #ddd;
+   border-bottom: 1px dashed #ddd;
+ }
+ .curiosities-container li{
+   height: 30px;
+ }
+
+ /* imagem bold */
+
+ .img-bold{
+   font-weight: bold;
+   text-align: center;
+ }
